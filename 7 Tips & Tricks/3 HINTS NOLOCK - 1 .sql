@@ -1,0 +1,5 @@
+SELECT * FROM categories
+
+BEGIN TRANSACTION
+UPDATE categories SET description = 'Test NOLOCK' WHERE id = 1004
+--EXECUTE 7 HINTS NOLOCK - 2 
